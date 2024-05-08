@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> diet website</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        th,
+        td {
+            padding: 10px;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #f2f2f2;
+        }
+        
+        tbody tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        @media screen and (max-width: 480px) {
+            .container {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <header class="header">
+
+        <a href="#" class="logo"> diet</a>
+
+        <nav class="navbar">
+            <a href="index.html">home</a>
+            <a href="about.html">about</a>
+            <a href="services.html">services</a>
+            <a href="diet.html">diet</a>
+            <a href="contact.html">contact</a>
+            <a href="group.html">Group</a>
+        </nav>
+
+        <div class="fas fa-bars" id="menu"></div>
+
+    </header>
+    <section class="services" id="services" style="margin-top: 60px;">
+
+        <h1 class="heading">our services</h1>
+
+        <div class="box-container">
+
+            <div class="box">
+
+                <div class="icon">
+                    <img src="images/service-1.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Nutritional Counseling</h3>
+                    <div class="line"></div>
+                    <p>Receive expert guidance from our nutritionists who will assess your current eating habits.</p>
+
+                </div>
+
+            </div>
+
+            <div class="box">
+
+                <div class="icon">
+                    <img src="images/service-2.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Personalized Meal Plans</h3>
+                    <div class="line"></div>
+                    <p>Get customized meal plans tailored to your dietary needs and goals.and helps you achieve optimal health</p>
+
+                </div>
+
+            </div>
+
+            <div class="box">
+
+                <div class="icon">
+                    <img src="images/service-3.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Weight Loss Coaching</h3>
+                    <div class="line"></div>
+                    <p>Our experienced weight loss coaches will guide and support you throughout your journey.</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <div class="container">
+        <h1>Other Diet Services</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Service</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Personalized Meal Plan</td>
+                    <td>Create a customized meal plan tailored to your needs and goals.</td>
+                </tr>
+                <tr>
+                    <td>Weight Loss Coaching</td>
+                    <td>Get one-on-one coaching to support your weight loss journey.</td>
+                </tr>
+                <tr>
+                    <td>Online Nutrition Course</td>
+                    <td>Learn about nutrition with our comprehensive online course.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> diet website</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #group-members li {
+            margin-top: 20px;
+            background-color: #f0fff7;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            color: #000000;
+            transition: background-color 0.3s ease;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <header class="header">
+
+        <a href="#" class="logo"> diet</a>
+
+        <nav class="navbar">
+            <a href="index.html">home</a>
+            <a href="about.html">about</a>
+            <a href="services.html">services</a>
+            <a href="diet.html">diet</a>
+            <a href="contact.html">contact</a>
+            <a href="group.html">Group</a>
+        </nav>
+
+        <div class="fas fa-bars" id="menu"></div>
+
+    </header>
+    <h1 style="text-align: center; margin-top: 100px; color: #29d978;">Group members</h1>
+    <ul id="group-members" style="text-align: center;">
+        <li> جوري ابو طقيقه</li>
+        <li> فرح غزاوي</li>
+        <li> ريم الشريف</li>
+    </ul>
+
+    <script>
+        function getRandomIndex(maxIndex) {
+            return Math.floor(Math.random() * maxIndex);
+        }
+
+        function displayGroupMembers() {
+            var groupMembersList = document.getElementById('group-members');
+            var members = groupMembersList.children;
+            var numMembers = members.length;
+
+            for (var i = numMembers - 1; i > 0; i--) {
+                var randomIndex = getRandomIndex(i + 1);
+                groupMembersList.appendChild(members[randomIndex]);
+            }
+        }
+
+        displayGroupMembers();
+    </script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
